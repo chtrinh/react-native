@@ -59,7 +59,7 @@ function getAdbPath() {
 function tryRunAdbReverse(device) {
   try {
     const adbPath = getAdbPath();
-    const adbArgs = ['reverse', 'tcp:8081', 'tcp:8081'];
+    const adbArgs = ['reverse', 'tcp:8088', 'tcp:8088'];
 
     // If a device is specified then tell adb to use it
     if (device) {
